@@ -22,7 +22,7 @@ for row in ax:
     for col in row:
         col.imshow(x_train[index],cmap='gray')
         index+=1
-#plt.show()
+plt.show()
 print("first ten labels",y_train[0:10])
 
 # Preprocessing the data
