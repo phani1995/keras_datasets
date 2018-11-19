@@ -40,10 +40,6 @@ image_shape = (image_width,image_height,image_channels)
 x_train = np.expand_dims(x_train,axis=3)
 x_test = np.expand_dims(x_test,axis=3)
 
-## Creating sparse vector representation
-from keras.utils import to_categorical
-y_train_sparse = to_categorical(y_train, num_classes=classes)
-y_test_sparse  = to_categorical(y_test, num_classes=classes)
 
 ## Normalization
 x_train = x_train /255
@@ -55,6 +51,11 @@ learning_rate_decay = 0.00001
 batch_size = 32
 epochs = 20
 classes = 10
+
+## Creating sparse vector representation
+from keras.utils import to_categorical
+y_train_sparse = to_categorical(y_train, num_classes=classes)
+y_test_sparse  = to_categorical(y_test, num_classes=classes)
 
 # Building the models
 from keras.models import Sequential
