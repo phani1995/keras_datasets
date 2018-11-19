@@ -6,7 +6,6 @@ import seaborn as sns
 
 # Loading the dataset
 from keras.datasets import cifar10
-
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 cifar10_labels_dict = {0:"airplane",1:"automobile",2:"bird",3:"cat",4:"deer",5:"dog",6:"frog",7:"horse",8:"ship",9:"truck"}
 
@@ -31,16 +30,19 @@ for i in range(0,10):
     print("Label value :",y_train[i][0])
     print("Object Name :",cifar10_labels_dict[y_train[i][0]])
     
-# Variables
+# Preprocessing the data
+
+## Variables
 image_width = 32
 image_height = 32
 image_channels = 3 
 image_shape = (image_width,image_height,image_channels)
 
-# Data Prepocessing
+## Normalization
 x_train  = x_train /255
 x_test = x_test /255
 
+## Creating sparse vector representation
 from keras.utils import to_categorical
 y_train_sparse = to_categorical(y_train)
 y_test_sparse = to_categorical(y_test)
@@ -64,8 +66,6 @@ model.add(Conv2D(filters = 256, kernel_size = (3,3), strides = (1, 1), padding =
 model.add(Activation("relu"))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(rate=0.3))
-
-
 
 # Layer 2
 model.add(Conv2D(filters = 256, kernel_size = (3,3), strides = (1, 1), padding = 'valid'))

@@ -20,10 +20,10 @@ fig, ax = plt.subplots(2, 5, sharex=True, sharey=True)
 index = 0
 for row in ax:
     for col in row:
+        col.set_xlabel(str(y_train[index]))
         col.imshow(x_train[index],cmap='gray')
         index+=1
 plt.show()
-print("first ten labels",y_train[0:10])
 
 # Preprocessing the data
 

@@ -20,19 +20,34 @@ fig, ax = plt.subplots(2, 5, sharex=True, sharey=True)
 index = 0
 for row in ax:
     for col in row:
+        col.set_xlabel(str(fashion_mnist_labels_dict[y_train[index]]))
         col.imshow(x_train[index],cmap='gray')
         index+=1
-#plt.show()
+plt.show()
 print("first ten labels")
 for i in range(0,10):
     print("Label value :",y_train[i])
     print("Object Name :",fashion_mnist_labels_dict[y_train[i]])
 
+# Preprocessing the data
+    
 # Variables 
 image_width  = 28
 image_height = 28
 image_channels = 1
 image_shape = (image_width,image_height,image_channels)
+
+x_train = np.expand_dims(x_train,axis=3)
+x_test = np.expand_dims(x_test,axis=3)
+
+## Creating sparse vector representation
+from keras.utils import to_categorical
+y_train_sparse = to_categorical(y_train, num_classes=classes)
+y_test_sparse  = to_categorical(y_test, num_classes=classes)
+
+## Normalization
+x_train = x_train /255
+x_test = x_test/255
 
 # Training varibles
 learning_rate = 0.001
@@ -40,17 +55,6 @@ learning_rate_decay = 0.00001
 batch_size = 32
 epochs = 20
 classes = 10
-
-# Data preporcessing
-x_train = np.expand_dims(x_train,axis=3)
-x_test = np.expand_dims(x_test,axis=3)
-
-from keras.utils import to_categorical
-y_train_sparse = to_categorical(y_train, num_classes=classes)
-y_test_sparse  = to_categorical(y_test, num_classes=classes)
-
-x_train = x_train /255
-x_test = x_test/255
 
 # Building the models
 from keras.models import Sequential
@@ -130,11 +134,3 @@ plt.title('Confusion Matrix',fontsize=20)
 sns.heatmap(df_confusion, annot=True,fmt="d")
 plt.xlabel('Predicted', fontsize=18)
 plt.ylabel('Actaul', fontsize=18)
-
-
-
-
-
-
-
-
