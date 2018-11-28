@@ -47,11 +47,10 @@ learning_rate_decay = 0.00001
 batch_size = 512
 epochs = 60
 classes = 2
-
-# Building the model
-# input shape is the vocabulary count used for the movie reviews (10,000 words)
+## input shape is the vocabulary count used for the movie reviews (10,000 words)
 vocab_size = 10000
 
+# Building the model
 from keras.models import Sequential
 from keras.layers import Embedding,GlobalAveragePooling1D,Dense
 from keras.optimizers import Adam
@@ -81,7 +80,6 @@ def thershold_function(x): # Function to convert sigmoid outputs to 0's and 1's
         return 0
 thershold = np.vectorize(thershold_function)
 
-# Results
 y_pred = thershold(y_pred)
 
 # Verifying the results
