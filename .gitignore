@@ -1,2 +1,6 @@
 .spyproject
 /src/.ipynb_checkpoints
+.ipynb_checkpoints
+.vscode
+/src/Sample.py
+/src/sample.py
