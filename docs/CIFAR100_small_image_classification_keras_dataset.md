@@ -1,4 +1,12 @@
 
+![jpg](/assets/images/CIFAR100_small_image_classification_keras_dataset_files/title_image.jpg)
+
+In this post,  
+We would like to analyse dataset **CIFAR10 small image classification** load it from the keras framework inbuilt function and build a neural network for it.
+
+This Cifar100 dataset was created by **Alex Krizhevsky** a researcher at google. This dataset is a classification dataset of 100 classes. For more information...  
+[official Link](https://www.cs.toronto.edu/~kriz/cifar.html) 
+
 # Imports
 
 `numpy`      package for array handling  
