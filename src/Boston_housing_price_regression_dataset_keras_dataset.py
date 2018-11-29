@@ -27,12 +27,6 @@ print("{} values :".format(columns[-1]),y_train[0:10])
 
 # Preprocessing the data
 
-## Variables
-image_width = 32
-image_height = 32
-image_channels = 3 
-image_shape = (image_width,image_height,image_channels)
-
 ## Normalization
 mean = x_train.mean(axis=0)        #Train Data
 std = x_train.std(axis=0)
@@ -55,7 +49,6 @@ learning_rate = 0.0001
 learning_rate_decay = 0.000001
 batch_size = 32
 epochs = 20
-classes = 10
 
 # Building the model
 from keras.models import Sequential
