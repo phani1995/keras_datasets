@@ -1,3 +1,11 @@
+![jpg](/assets/images/Reuters_newswire_topics_classification_keras_dataset_files/title_image.jpg)
+
+
+In this post,  
+We would like to analyse dataset **Reuters newswire topics classification** load it from the keras framework inbuilt function and build a neural network for it.
+
+This retuers newswire dataset is created by **David D Lewis** from AT &T Labs. This dataset is a classification dataset of 46  classes. For more information...  
+[official Link](https://archive.ics.uci.edu/ml/datasets/reuters-21578+text+categorization+collection)  
 
 # Imports
 
@@ -448,5 +456,5 @@ sns.heatmap(df_confusion, annot=True,fmt="d")
 
 
 
-![png](Reuters_newswire_topics_classification_keras_dataset_files/Reuters_newswire_topics_classification_keras_dataset_19_2.png)
+![png](/assets/images/Reuters_newswire_topics_classification_keras_dataset_files/Reuters_newswire_topics_classification_keras_dataset_19_2.png)
 

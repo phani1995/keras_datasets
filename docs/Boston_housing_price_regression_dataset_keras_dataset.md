@@ -1,3 +1,12 @@
+![jpg](/assets/images/Boston_housing_price_regression_dataset_keras_dataset_files/title_image.jpg)
+
+In this post,  
+We would like to analyse dataset **Boston Housing Price Dataset** load it from the keras framework inbuilt function and build a neural network for it.
+
+This Bostono housing dataset was created by **U.S. Census Service**. This dataset is a regression over 13 house related attributes to predict the house prices in boston. For more information...  
+[official Link](https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html)  
+
+There is description for every line of code.
 
 # Imports
 
@@ -281,9 +290,9 @@ plt.show()
     
 
 
-![png](Boston_housing_price_regression_dataset_keras_dataset_files/Boston_housing_price_regression_dataset_keras_dataset_19_1.png)
+![png](/assets/images/Boston_housing_price_regression_dataset_keras_dataset_files/Boston_housing_price_regression_dataset_keras_dataset_19_1.png)
 
 
 
-![png](Boston_housing_price_regression_dataset_keras_dataset_files/Boston_housing_price_regression_dataset_keras_dataset_19_2.png)
+![png](/assets/images/Boston_housing_price_regression_dataset_keras_dataset_files/Boston_housing_price_regression_dataset_keras_dataset_19_2.png)
 

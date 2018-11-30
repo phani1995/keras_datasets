@@ -1,3 +1,12 @@
+![jpg](/assets/images/IMDB_Movie_reviews_sentiment_classification_keras_dataset_files/title_image.jpg)
+
+In this post,  
+We would like to analyse dataset **IMDB Movie Reviews sentiment Classification** load it from the keras framework inbuilt function and build a neural network for it.
+
+This IMDB Movie review dataset contains around 50000 movie reviews catogorized as Postive or Negetive. This dataset is a classification dataset of 2 classes. For more information...  
+[official Link](http://ai.stanford.edu/~amaas/data/sentiment/)  
+
+There is description for every line of code.
 
 # Imports
 
@@ -459,11 +468,11 @@ plt.show()
     
 
 
-![png](IMDB_Movie_reviews_sentiment_classification_keras_dataset_files/IMDB_Movie_reviews_sentiment_classification_keras_dataset_19_1.png)
+![png](/assets/images/IMDB_Movie_reviews_sentiment_classification_keras_dataset_files/IMDB_Movie_reviews_sentiment_classification_keras_dataset_19_1.png)
 
 
 
-![png](IMDB_Movie_reviews_sentiment_classification_keras_dataset_files/IMDB_Movie_reviews_sentiment_classification_keras_dataset_19_2.png)
+![png](/assets/images/IMDB_Movie_reviews_sentiment_classification_keras_dataset_files/IMDB_Movie_reviews_sentiment_classification_keras_dataset_19_2.png)
 
 
 # Visulizing the results
@@ -498,5 +507,5 @@ sns.heatmap(df_confusion, annot=True,fmt="d")
 
 
 
-![png](IMDB_Movie_reviews_sentiment_classification_keras_dataset_files/IMDB_Movie_reviews_sentiment_classification_keras_dataset_21_2.png)
+![png](/assets/images/IMDB_Movie_reviews_sentiment_classification_keras_dataset_files/IMDB_Movie_reviews_sentiment_classification_keras_dataset_21_2.png)
 
