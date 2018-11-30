@@ -58,6 +58,7 @@ def load_data(label_mode='fine'):
         x_test = x_test.transpose(0, 2, 3, 1)
 
     return (x_train, y_train), (x_test, y_test)
+```
 ## Regarding Dataset
 cifar100 (Canadian Institute For Advanced Research) is dataset of 100 objectst namely
 
